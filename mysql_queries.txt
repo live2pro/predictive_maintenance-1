@@ -1,0 +1,12 @@
+create table test_predictions
+( 	machine_id varchar(10),
+    session_id int,
+    sess_time timestamp,
+    avg_sound double,
+    avg_temperature double,
+    max_cum_dist double,
+    prediction double);
+
+
+
+    alter table test_predictions add primary key (machine_id(10), session_id);
